@@ -7,5 +7,13 @@ const removeFromArray = function(arr) {
   return arr;
 };
 
+const removeFromArray2 = function(arr, ...removals){
+  resultArray = []
+  arr.forEach(element => {
+    if (!removals.includes(element)) resultArray.push(element);
+  });
+  return resultArray
+}
+
 // Do not edit below this line
 module.exports = removeFromArray;
